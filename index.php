@@ -7,16 +7,23 @@
     <?php include_once './stylesheets/globalStylesheet.php'; ?>
     <link href="./assets/css/pages/home.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <title>Resideo.</title>
+    <title>Tirtha Bridal</title>
 </head>
 
 <body>
+    <?php include_once './data/data.php' ?>
 
     <header>
         <!-- Navbar -->
         <?php include_once './components/navbar/navbar.php'; ?>
     </header>
     <main>
+        <!-- Banner -->
+        <?php include_once './components/home/banner.php'; ?>
+        <!-- Info -->
+        <?php include_once './components/home/info.php' ?>
+        <!-- planning -->
+        <?php include_once './components/home/event.php' ?>
 
 
     </main>
@@ -30,6 +37,8 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script>
     <script src="./assets/js/layout.js"></script>
+    <script src="./assets/js/home.js"></script>
+
 
 </body>
 

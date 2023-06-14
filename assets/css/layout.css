@@ -11047,10 +11047,6 @@ textarea.form-control-lg {
   object-fit: contain;
 }
 
-body {
-  background-color: #f7f7f7;
-}
-
 .section-button:after, .section-button--try:after {
   content: "";
   position: absolute;
@@ -11135,6 +11131,11 @@ body {
   color: white;
   border-color: white;
 }
+@media screen and (max-width: 575.98px) {
+  .custom-nav {
+    height: 65px;
+  }
+}
 
 .navbar {
   position: fixed;
@@ -11175,10 +11176,10 @@ body {
   }
 }
 .navbar__scrolled {
-  background: white;
   color: black;
-  backdrop-filter: blur(12px);
   height: 75px;
+  background-color: white;
+  box-shadow: 0 1px 10px 2px rgba(0, 0, 0, 0.2);
 }
 .navbar__nav {
   display: flex;
@@ -11341,8 +11342,18 @@ body {
 .navbar__search-input::placeholder {
   color: inherit;
 }
+@media screen and (max-width: 575.98px) {
+  .navbar__search-input {
+    width: 90px;
+  }
+}
 .navbar__search-button {
   color: inherit;
+}
+@media screen and (max-width: 991.98px) {
+  .navbar__search-button {
+    padding: 0;
+  }
 }
 .navbar__button-container {
   display: flex;
