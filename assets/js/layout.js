@@ -11,8 +11,6 @@ window.addEventListener("scroll", function () {
   }
 });
 
-window;
-
 //navbar active
 const currentPage = window.location.pathname;
 if (currentPage === "/property.php") {
@@ -24,5 +22,3 @@ const body = document.getElementsByTagName("body")[0];
 if (currentPage === "/property.php") {
   body.style.overflow = "hidden";
 }
-
-//property-card

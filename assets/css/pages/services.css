@@ -1,0 +1,60 @@
+.package {
+  position: relative;
+  padding: 200px 0;
+  background-color: black;
+}
+@media screen and (max-width: 767.98px) {
+  .package {
+    padding: 150px 0;
+  }
+}
+.package::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../../img/wedding.jfif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+.package__container {
+  position: relative;
+}
+.package__content {
+  padding: 0 100px;
+  color: white;
+  text-align: center;
+}
+@media screen and (max-width: 991.98px) {
+  .package__content {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .package__content-desc {
+    font-size: 14px;
+  }
+}
+.package__content-button {
+  margin: auto;
+}
+
+.banner__content {
+  gap: 16px;
+}
+.banner__content-desc {
+  margin: 0;
+}
+
+@media screen and (max-width: 991.98px) {
+  .event__content-text {
+    border-color: black;
+    color: black;
+  }
+}
+
+/*# sourceMappingURL=services.css.map */

@@ -1,0 +1,82 @@
+@use "sass:math";
+@use "../_config.scss" as *;
+
+%hover-style {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-right: 0;
+  border-radius: 25px;
+  opacity: 0;
+  transition: all ease-in-out 0.4s;
+}
+
+.package {
+  position: relative;
+  padding: 200px 0;
+  background-color: black;
+
+  @media screen and (max-width: 767.98px) {
+    padding: 150px 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url("../../img/wedding.jfif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__content {
+    padding: 0 100px;
+    color: white;
+    text-align: center;
+
+    @media screen and (max-width: 991.98px) {
+      padding: 0;
+    }
+
+    &-desc {
+      @media screen and (max-width: 991.98px) {
+        font-size: 14px;
+      }
+    }
+
+    &-button {
+      margin: auto;
+    }
+  }
+}
+
+.banner {
+  &__content {
+    gap: 16px;
+
+    &-desc {
+      margin: 0;
+    }
+  }
+}
+
+.event {
+  &__content {
+    &-text {
+      @media screen and (max-width: 991.98px) {
+        border-color: black;
+        color: black;
+      }
+    }
+  }
+}

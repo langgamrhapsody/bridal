@@ -1,8 +1,8 @@
-<div class="event">
-    <div class="event__container container">
+<div id="event-section" class="event">
+    <div id="event-container" class="event__container container">
         <div class="event__content row">
             <div class="event__col-text col-12 col-lg-7">
-                <div class="event__content-text">
+                <div id="event-text" class="event__content-text">
                     <h2 class="section__title">Event Planning</h2>
                     <p class="section__desc">Tirtha Bridal signature style is a wedding that offers timeless elegance
                         with sophisticated contemporary grace for the most inspired and personalized day.</p>

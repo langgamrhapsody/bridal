@@ -11,22 +11,22 @@
             </div>
             <ul class="navbar__nav">
                 <li class="navbar__nav-item">
-                    <a class="navbar__nav-item-link active " aria-current="page" href="/">Home</a>
+                    <a href="#" class="navbar__nav-item-link active " aria-current="page" href="/">Home</a>
                 </li>
                 <li class="navbar__nav-item">
                     <a class="navbar__nav-item-link" href="/property.php">Our Story</a>
                 </li>
                 <li class="navbar__nav-item">
-                    <a class="navbar__nav-item-link" href="#">Services</a>
+                    <a href="/service.php" class="navbar__nav-item-link">Services</a>
                 </li>
                 <li class="navbar__nav-item">
-                    <a class="navbar__nav-item-link ">Wedding Venues</a>
+                    <a href="#" class="navbar__nav-item-link ">Wedding Venues</a>
                 </li>
                 <li class="navbar__nav-item">
-                    <a class="navbar__nav-item-link ">Wedding Stories</a>
+                    <a href="/story.php" class="navbar__nav-item-link ">Wedding Stories</a>
                 </li>
                 <li class="navbar__nav-item">
-                    <a class="navbar__nav-item-link" href="/contact.php">Contact</a>
+                    <a href="#" class="navbar__nav-item-link" href="/contact.php">Contact</a>
                 </li>
 
             </ul>

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php include_once './stylesheets/globalStylesheet.php'; ?>
     <link href="./assets/css/pages/home.css" rel="stylesheet">
+    <link href="./assets/css/pages/services.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 
@@ -21,22 +23,15 @@
     </header>
     <main>
         <!-- Banner -->
-        <?php include_once './components/home/banner.php'; ?>
-        <!-- Info -->
-        <?php include_once './components/home/info.php' ?>
+        <?php include_once './components/services/banner.php'; ?>
         <!-- planning -->
         <?php include_once './components/event.php' ?>
         <!-- decor -->
         <?php include_once './components/decor.php' ?>
         <!-- food -->
         <?php include_once './components/food.php' ?>
-
-        <!-- gallery -->
-        <?php include_once './components/gallery.php' ?>
-
-
-        <!-- question -->
-        <?php include_once './components/home/question.php' ?>
+        <!-- package -->
+        <?php include_once './components/services/package.php' ?>
 
     </main>
     <footer>
@@ -53,6 +48,8 @@
     </script>
     <script src="./assets/js/layout.js"></script>
     <script src="./assets/js/home.js"></script>
+    <script src="./assets/js/services.js"></script>
+
 
 
 

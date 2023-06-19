@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php include_once './stylesheets/globalStylesheet.php'; ?>
-    <link href="./assets/css/pages/home.css" rel="stylesheet">
+    <link href="./assets/css/pages/story.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 
@@ -20,23 +20,23 @@
         <?php include_once './components/navbar/navbar.php'; ?>
     </header>
     <main>
+
         <!-- Banner -->
-        <?php include_once './components/home/banner.php'; ?>
-        <!-- Info -->
-        <?php include_once './components/home/info.php' ?>
-        <!-- planning -->
-        <?php include_once './components/event.php' ?>
-        <!-- decor -->
-        <?php include_once './components/decor.php' ?>
-        <!-- food -->
-        <?php include_once './components/food.php' ?>
+        <?php include_once './components/story/banner.php'; ?>
+
+        <!-- story -->
+        <?php include_once './components/story/ourStory.php'; ?>
+
+        <!-- team -->
+        <?php include_once './components/story/team.php'; ?>
+
+        <!-- background picture -->
+        <?php include_once './components/story/backPict.php'; ?>
+
 
         <!-- gallery -->
         <?php include_once './components/gallery.php' ?>
 
-
-        <!-- question -->
-        <?php include_once './components/home/question.php' ?>
 
     </main>
     <footer>
@@ -53,6 +53,8 @@
     </script>
     <script src="./assets/js/layout.js"></script>
     <script src="./assets/js/home.js"></script>
+
+    <script src="./assets/js/story.js"></script>
 
 
 

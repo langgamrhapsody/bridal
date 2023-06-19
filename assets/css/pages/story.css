@@ -1,0 +1,248 @@
+.backPict {
+  position: relative;
+  padding: 200px 0;
+  background-color: black;
+}
+@media screen and (max-width: 767.98px) {
+  .backPict {
+    padding: 150px 0;
+  }
+}
+.backPict::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../../img/test.jfif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.banner__socmed {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+}
+.banner__socmed-desc {
+  font-size: 18px;
+  line-height: 2;
+  margin: 0;
+}
+@media screen and (max-width: 991.98px) {
+  .banner__socmed-desc {
+    font-size: 16px;
+  }
+}
+.banner__socmed-button {
+  display: flex;
+  gap: 8px;
+}
+.banner__socmed-button .button-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  border-radius: 999px;
+  border: 1px solid white;
+  transition: all ease-in-out 0.2s;
+}
+@media screen and (max-width: 991.98px) {
+  .banner__socmed-button .button-item {
+    padding: 4px;
+    width: 36px;
+    height: 36px;
+  }
+}
+.banner__socmed-button .button-item:hover {
+  background-color: white;
+  color: #5f708a;
+}
+.banner__socmed-button .button-item__svg {
+  color: inherit;
+  width: 16px;
+  height: 16px;
+  transition: all ease-in-out 0.2s;
+}
+@media screen and (max-width: 991.98px) {
+  .banner__socmed-button .button-item__svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.team {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+@media screen and (max-width: 991.98px) {
+  .team {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+.team::after {
+  content: "";
+  position: absolute;
+  top: -250px;
+  left: -175px;
+  background-image: url("../../img/leaf-3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  width: 40%;
+  height: 100%;
+  opacity: 0.2;
+  transform: rotate(30deg);
+}
+@media screen and (max-width: 991.98px) {
+  .team::after {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .team::after {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .team::after {
+    width: 100%;
+  }
+}
+.team__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+  padding: 50px 0;
+  width: 50%;
+  color: grey;
+}
+.team__content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  background-image: url("../../img/leaf-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  width: 50%;
+  height: 100%;
+  opacity: 0.2;
+}
+@media screen and (max-width: 991.98px) {
+  .team__content::before {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .team__content::before {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .team__content::before {
+    width: 100%;
+  }
+}
+.team__content-button {
+  background-color: #5f708a;
+  color: white;
+  border-radius: 0;
+}
+.team__content-button:hover {
+  background-color: #4c5a6e;
+  color: white;
+}
+@media screen and (max-width: 991.98px) {
+  .team__content {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .team__content {
+    width: 70%;
+  }
+}
+
+.story {
+  position: relative;
+  padding: 100px 0;
+}
+.story__row {
+  position: relative;
+}
+.story__col, .story__col--text {
+  margin-bottom: 200px;
+}
+.story__col--text {
+  position: absolute;
+  right: 0;
+  top: 400px;
+  padding: 64px;
+  background-color: white;
+}
+.story__img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+.story__swiper {
+  position: relative;
+  overflow: hidden;
+  width: 500px;
+  height: 600px;
+}
+.story__swiper-container {
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
+.story__swiper-container::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 500px;
+  height: 600px;
+  background-color: #5f708a;
+}
+.story__swiper-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.story__swiper-pagination {
+  bottom: -32px !important;
+  left: 150px !important;
+  transform: translateX(0) !important;
+}
+.story__swiper-pagination .swiper-pagination-bullet-active {
+  background: #5f708a !important;
+}
+.story__content {
+  color: grey;
+}
+.story__content-desc {
+  line-height: 2;
+  font-size: 17px;
+}
+
+/*# sourceMappingURL=story.css.map */
