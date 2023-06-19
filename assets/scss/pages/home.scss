@@ -12,6 +12,54 @@
   transition: all ease-in-out 0.4s;
 }
 
+.section {
+  &__title {
+    position: relative;
+    @media screen and (max-width: 991.98px) {
+      font-size: 24px;
+    }
+  }
+
+  &__desc {
+    position: relative;
+
+    line-height: 2;
+    font-size: 18px;
+
+    @media screen and (max-width: 1199.98px) {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    @media screen and (max-width: 991.98px) {
+      margin: 0;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    @media screen and (max-width: 767.98px) {
+      font-weight: 400;
+    }
+  }
+
+  &__button {
+    position: relative;
+
+    display: flex;
+    padding: 8px 24px;
+    width: max-content;
+    border: 1px solid;
+    border-color: inherit;
+    color: inherit;
+    transition: all ease-in-out 0.3s;
+
+    &:hover {
+      color: color(text, primary);
+      border-color: color(text, primary);
+    }
+  }
+}
+
 .banner {
   position: relative;
   height: 100vh;
@@ -40,24 +88,12 @@
     z-index: 1;
     gap: 32px;
     color: white;
+    border-color: white;
     text-align: center;
 
     &-title {
       span {
         transition: all ease-in-out 0.3s;
-      }
-    }
-
-    &-button {
-      display: flex;
-      padding: 8px 24px;
-      border: 1px solid white;
-      color: white;
-      transition: all ease-in-out 0.3s;
-
-      &:hover {
-        color: color(text, primary);
-        border-color: color(text, primary);
       }
     }
   }
@@ -133,14 +169,17 @@
   &__content {
     position: relative;
     color: grey;
-    padding-left: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
 
     @media screen and (max-width: 1399.98px) {
-      padding-left: 60px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
 
     @media screen and (max-width: 991.98px) {
       padding-left: 0;
+      padding-right: 0;
     }
 
     @media screen and (max-width: 767.98px) {
@@ -148,35 +187,33 @@
     }
 
     &-text {
-      &-container {
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-        background-color: #efefef;
-        height: 100%;
-        padding: 100px 80px 100px 200px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      background-color: #efefef;
+      height: 100%;
+      padding: 100px 80px 100px 200px;
 
-        @media screen and (max-width: 1399.98px) {
-          padding: 80px 80px 80px 150px;
-        }
+      @media screen and (max-width: 1399.98px) {
+        padding: 80px 80px 80px 150px;
+      }
 
-        @media screen and (max-width: 1199.98px) {
-          padding: 50px 80px 50px 150px;
-          gap: 16px;
-        }
+      @media screen and (max-width: 1199.98px) {
+        padding: 50px 80px 50px 150px;
+        gap: 16px;
+      }
 
-        @media screen and (max-width: 991.98px) {
-          padding: 20px 50px;
-          text-align: center;
-          justify-content: center;
-          background-color: rgba(239, 239, 239, 0.8);
-          backdrop-filter: blur(5px);
-          border-radius: 10px;
-          color: black;
-        }
-        @media screen and (max-width: 767.98px) {
-          padding: 20px;
-        }
+      @media screen and (max-width: 991.98px) {
+        padding: 20px 50px;
+        text-align: center;
+        justify-content: center;
+        background-color: rgba(239, 239, 239, 0.8);
+        backdrop-filter: blur(5px);
+        border-radius: 10px;
+        color: black;
+      }
+      @media screen and (max-width: 767.98px) {
+        padding: 20px;
       }
 
       &-element {
@@ -250,5 +287,341 @@
 
   @media screen and (max-width: 767.98px) {
     padding-bottom: 100px;
+  }
+}
+
+.event {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-color: #5f708a;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -75px;
+    background-image: url("../../img/leaf-3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    opacity: 0.3;
+    width: 20%;
+    height: 50%;
+    transform: rotate(25deg);
+    transform: scaleX(-1);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -65px;
+    background-image: url("../../img/leaf-2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    opacity: 0.3;
+    width: 20%;
+    height: 50%;
+    transform: rotate(25deg);
+    transform: scaleX(-1);
+  }
+
+  &__col {
+    &-text {
+      position: relative;
+      z-index: 1;
+    }
+    &-img {
+      position: absolute;
+      z-index: 0;
+      right: 0;
+      top: 50px;
+      height: 100%;
+
+      @media screen and (max-width: 991.98px) {
+        display: none;
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+    padding: 0 50px;
+
+    @media screen and (max-width: 575.98px) {
+      padding: 10px;
+    }
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      background-color: white;
+      color: grey;
+      width: 100%;
+      height: 100%;
+      padding: 125px 110px;
+
+      @media screen and (max-width: 991.98px) {
+        background-color: transparent;
+        border: 1px solid color(text, primary);
+        color: color(text, primary);
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+        gap: 24px;
+        border-radius: 20px;
+      }
+
+      @media screen and (max-width: 575.98px) {
+        padding: 10px;
+      }
+    }
+
+    &-img {
+      width: 100%;
+      height: 100%;
+      padding-right: 50px;
+
+      &-item {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.decor {
+  padding: 100px 0;
+  background-image: url("../../img/3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__row {
+    justify-content: right;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    background-color: white;
+    color: grey;
+    width: 100%;
+    height: 100%;
+    padding: 80px;
+
+    @media screen and (max-width: 991.98px) {
+      padding: 70px 30px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(239, 239, 239, 0.8);
+      backdrop-filter: blur(5px);
+      border-radius: 10px;
+      color: black;
+    }
+  }
+}
+
+.food {
+  position: relative;
+  padding: 100px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 75%;
+    background-color: #5f708a;
+  }
+
+  &__row {
+    justify-content: center;
+  }
+  &__content {
+    position: relative;
+    overflow: hidden;
+
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 80px;
+
+    &:before {
+      content: "";
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0)),
+        url("../../img/8.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+    }
+
+    &-desc {
+      display: flex;
+      gap: 32px;
+      flex-direction: column;
+    }
+  }
+}
+
+.gallery {
+  &__row {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  &__col {
+    display: none;
+    padding: 0;
+    &--0 {
+      display: block;
+    }
+    &--1 {
+      display: block;
+    }
+    &--2 {
+      display: block;
+    }
+    &--3 {
+      display: block;
+    }
+    &--4 {
+      display: block;
+    }
+    &--5 {
+      display: block;
+    }
+    &--6 {
+      display: block;
+      @media screen and (max-width: 575.98px) {
+        display: none;
+      }
+    }
+    &--7 {
+      display: block;
+      @media screen and (max-width: 575.98px) {
+        display: none;
+      }
+    }
+    &--8 {
+      display: block;
+      @media screen and (max-width: 767.98px) {
+        display: none;
+      }
+    }
+    &--9 {
+      display: block;
+      @media screen and (max-width: 767.98px) {
+        display: none;
+      }
+    }
+    &--10 {
+      display: block;
+      @media screen and (max-width: 767.98px) {
+        display: none;
+      }
+    }
+    &--11 {
+      display: block;
+      @media screen and (max-width: 767.98px) {
+        display: none;
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all ease-in-out 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+    &-container {
+      width: 100%;
+      aspect-ratio: 1/1;
+      overflow: hidden;
+      cursor: pointer;
+    }
+  }
+}
+
+.question {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  @media screen and (max-width: 991.98px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+    padding: 50px 0;
+    width: 50%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      background-image: url("../../img/leaf-1.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 80%;
+      width: 50%;
+      height: 100%;
+      opacity: 0.2;
+
+      @media screen and (max-width: 991.98px) {
+        width: 60%;
+      }
+      @media screen and (max-width: 767.98px) {
+        width: 70%;
+      }
+      @media screen and (max-width: 420px) {
+        width: 100%;
+      }
+    }
+
+    &-button {
+      background-color: #5f708a;
+      color: white;
+      border-radius: 0;
+
+      &:hover {
+        background-color: colorMod(#5f708a, -20%);
+        color: white;
+      }
+    }
+
+    @media screen and (max-width: 991.98px) {
+      width: 60%;
+    }
+
+    @media screen and (max-width: 767.98px) {
+      width: 70%;
+    }
   }
 }

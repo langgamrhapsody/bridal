@@ -18,3 +18,5 @@ var bannerImgSwiper = new Swiper(".banner__swiper", {
     loadPrevNext: true,
   },
 });
+
+Fancybox.bind('[data-fancybox="gallery"]', {});

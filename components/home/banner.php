@@ -8,7 +8,7 @@
                         views of
                         the Indian Ocean, is designed
                         to host weddings that provide a sense of magic</p>
-                    <button class="btn banner__content-button">Read More</button>
+                    <button class="btn section__button">Read More</button>
                 </div>
             </div>
         </div>
