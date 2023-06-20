@@ -6,7 +6,7 @@
             </div>
         </div>
 
-        <div class="info__col-text col-12 col-lg-6">
+        <div class="info__col-text col-12 col-md-10 col-lg-6">
             <div class="info__content-text">
                 <div class="info__content-text-element">
                     <img class="info__element-img" src="../../assets/img/element-2.png" alt="element-2">

@@ -11556,6 +11556,7 @@ textarea.form-control-lg {
 }
 .footer__contact-number .number-item {
   display: block;
+  width: max-content;
   font-size: 18px;
   line-height: 2;
   color: inherit;
@@ -11646,9 +11647,10 @@ textarea.form-control-lg {
 }
 
 .banner {
+  display: flex;
+  align-items: center;
   position: relative;
   height: 100vh;
-  padding: 200px;
   background: #181d21;
 }
 .banner:hover .banner__content-title span {
@@ -11774,18 +11776,6 @@ textarea.form-control-lg {
 }
 .banner__swiper-button .banner__swiper-button-prev::after {
   content: unset;
-}
-@media screen and (min-width: 1500px) {
-  .banner {
-    padding: 250px;
-  }
-}
-@media screen and (max-width: 1199.98px) {
-  .banner {
-    display: grid;
-    place-items: center;
-    padding: 0;
-  }
 }
 
 .event {
