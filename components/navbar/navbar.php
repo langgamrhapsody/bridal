@@ -11,7 +11,7 @@
             </div>
             <ul class="navbar__nav">
                 <li class="navbar__nav-item">
-                    <a href="#" class="navbar__nav-item-link active " aria-current="page" href="/">Home</a>
+                    <a href="/" class="navbar__nav-item-link active " aria-current="page" href="/">Home</a>
                 </li>
                 <li class="navbar__nav-item">
                     <a href="/story.php" class="navbar__nav-item-link" ">Our Story</a>

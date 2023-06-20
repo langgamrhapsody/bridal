@@ -11947,6 +11947,11 @@ textarea.form-control-lg {
   height: 100%;
   padding: 80px;
 }
+@media screen and (max-width: 420px) {
+  .food__content {
+    padding: 32px;
+  }
+}
 .food__content:before {
   content: "";
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgb(0, 0, 0)), url("../img/8.jpg");
