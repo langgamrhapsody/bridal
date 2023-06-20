@@ -11760,6 +11760,11 @@ textarea.form-control-lg {
   padding: 16px;
   border: 1px solid white;
   border-radius: 50%;
+  transition: all ease-in-out 0.3s;
+}
+.banner__swiper-button .banner__swiper-button-next:hover {
+  border-color: #edc170;
+  color: #edc170;
 }
 .banner__swiper-button .banner__swiper-button-next::after {
   content: unset;
@@ -11773,6 +11778,11 @@ textarea.form-control-lg {
   padding: 16px;
   border: 1px solid white;
   border-radius: 50%;
+  transition: all ease-in-out 0.3s;
+}
+.banner__swiper-button .banner__swiper-button-prev:hover {
+  border-color: #edc170;
+  color: #edc170;
 }
 .banner__swiper-button .banner__swiper-button-prev::after {
   content: unset;

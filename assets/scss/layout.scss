@@ -783,6 +783,12 @@ body {
         padding: 16px;
         border: 1px solid white;
         border-radius: 50%;
+        transition: all ease-in-out 0.3s;
+
+        &:hover {
+          border-color: color(text, primary);
+          color: color(text, primary);
+        }
 
         &::after {
           content: unset;
@@ -798,6 +804,12 @@ body {
         padding: 16px;
         border: 1px solid white;
         border-radius: 50%;
+        transition: all ease-in-out 0.3s;
+
+        &:hover {
+          border-color: color(text, primary);
+          color: color(text, primary);
+        }
 
         &::after {
           content: unset;
