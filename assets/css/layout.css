@@ -11201,7 +11201,6 @@ textarea.form-control-lg {
   font-weight: 500;
   font-size: 12px;
   cursor: pointer;
-  transition: all ease-in-out 0.3s;
   text-decoration: none;
 }
 .navbar__nav-item-link--custom {
@@ -11248,6 +11247,7 @@ textarea.form-control-lg {
   width: 40px;
   height: 40px;
   color: inherit;
+  transition: unset;
 }
 .navbar__toggler:hover .navbar__toggler-icon {
   color: #edc170;
@@ -11343,7 +11343,6 @@ textarea.form-control-lg {
   border-bottom: 1px solid;
   border-color: inherit;
   color: inherit;
-  transition: all ease-in-out 0.3s;
 }
 .navbar__search-input::placeholder {
   color: inherit;
@@ -11355,6 +11354,7 @@ textarea.form-control-lg {
 }
 .navbar__search-button {
   color: inherit;
+  transition: unset;
 }
 @media screen and (max-width: 991.98px) {
   .navbar__search-button {
@@ -11618,7 +11618,6 @@ textarea.form-control-lg {
   color: inherit;
   width: 16px;
   height: 16px;
-  transition: all ease-in-out 0.2s;
 }
 @media screen and (max-width: 991.98px) {
   .footer__socmed-button .button-item__svg {
@@ -11721,7 +11720,6 @@ textarea.form-control-lg {
   color: inherit;
   width: 16px;
   height: 16px;
-  transition: all ease-in-out 0.2s;
 }
 @media screen and (max-width: 991.98px) {
   .banner__socmed-button .button-item__svg {
