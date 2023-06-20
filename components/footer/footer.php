@@ -1,29 +1,29 @@
 <div class="footer">
     <div class="container">
         <div class="footer__row row">
-            <div class="col-12 col-md-3 col-lg-3 col-xxl-2">
+            <div class="footer__col col-12 col-md-3 col-lg-3 col-xxl-2">
                 <ul class="footer__nav">
                     <li class="footer__nav-item">
-                        <a href="#" class="footer__nav-item-link active " aria-current="page" href="/">Home</a>
+                        <a href="/" class="footer__nav-item-link active " aria-current="page" href="/">Home</a>
                     </li>
                     <li class="footer__nav-item">
-                        <a href="#" class="footer__nav-item-link" href="/property.php">Our Story</a>
+                        <a href="/story.php" class="footer__nav-item-link">Our Story</a>
                     </li>
                     <li class="footer__nav-item">
-                        <a href="#" class="footer__nav-item-link" href="#">Services</a>
+                        <a href="/service.php" class="footer__nav-item-link">Services</a>
                     </li>
                     <li class="footer__nav-item">
                         <a href="#" class="footer__nav-item-link ">Wedding Venues</a>
                     </li>
                     <li class="footer__nav-item">
-                        <a href="#" class="footer__nav-item-link ">Wedding Stories</a>
+                        <a href="/story.php" class="footer__nav-item-link ">Wedding Stories</a>
                     </li>
                     <li class="footer__nav-item">
-                        <a href="#" class="footer__nav-item-link" href="/contact.php">Contact</a>
+                        <a href="#" class="footer__nav-item-link">Contact</a>
                     </li>
                 </ul>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="footer__col col-12 col-sm-6 col-md-4 col-lg-4">
                 <div class="footer__contact">
                     <h2 class="footer__contact-title">PT. Tirtha Bridal</h2>
                     <p class="footer__contact-address">Jl. Uluwatu Br. Dinas Karang Boma Desa Pecatu 80364 Bali,
@@ -35,7 +35,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-4 col-lg-4">
+            <div class="footer__col col-12 col-md-4 col-lg-4">
                 <div class="footer__socmed">
                     <h2 class="footer__socmed-title">
                         Get In Touch

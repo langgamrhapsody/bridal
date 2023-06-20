@@ -9,6 +9,11 @@ var bannerImgSwiper = new Swiper(".banner__swiper", {
     disableOnInteraction: false,
   },
 
+  navigation: {
+    nextEl: ".banner__swiper-button-next",
+    prevEl: ".banner__swiper-button-prev",
+  },
+
   longSwipesRatio: 0.01,
   followFinger: false,
   grabCursor: true,

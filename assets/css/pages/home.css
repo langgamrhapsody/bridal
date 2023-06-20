@@ -153,11 +153,6 @@
     display: flex;
   }
 }
-@media screen and (max-width: 767.98px) {
-  .info__content-text-element {
-    display: none;
-  }
-}
 @media screen and (max-width: 991.98px) {
   .info__content-text-title {
     font-size: 24px;

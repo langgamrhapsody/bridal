@@ -11452,6 +11452,23 @@ textarea.form-control-lg {
   height: 50%;
   transform: rotate(25deg);
 }
+@media screen and (max-width: 991.98px) {
+  .footer::before {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .footer::before {
+    width: 40%;
+    bottom: -150px;
+    right: -50px;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .footer::before {
+    width: 50%;
+  }
+}
 .footer::after {
   content: "";
   position: absolute;
@@ -11465,6 +11482,25 @@ textarea.form-control-lg {
   width: 20%;
   height: 50%;
   transform: rotate(25deg);
+}
+@media screen and (max-width: 991.98px) {
+  .footer::after {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .footer::after {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .footer::after {
+    width: 50%;
+  }
+}
+.footer__col {
+  position: relative;
+  z-index: 1;
 }
 .footer__row {
   justify-content: space-around;
@@ -11707,6 +11743,39 @@ textarea.form-control-lg {
   object-fit: cover;
   object-position: center;
   filter: brightness(0.5);
+}
+.banner__swiper-button {
+  z-index: 5;
+  display: flex;
+  gap: 12px;
+  margin-top: 40px;
+  justify-content: center;
+}
+.banner__swiper-button .banner__swiper-button-next {
+  position: unset !important;
+  width: 48px;
+  height: 48px;
+  margin-top: unset;
+  color: white;
+  padding: 16px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.banner__swiper-button .banner__swiper-button-next::after {
+  content: unset;
+}
+.banner__swiper-button .banner__swiper-button-prev {
+  position: unset !important;
+  width: 48px;
+  height: 48px;
+  margin-top: unset;
+  color: white;
+  padding: 16px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.banner__swiper-button .banner__swiper-button-prev::after {
+  content: unset;
 }
 @media screen and (min-width: 1500px) {
   .banner {

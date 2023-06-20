@@ -14,10 +14,10 @@
                     <a href="#" class="navbar__nav-item-link active " aria-current="page" href="/">Home</a>
                 </li>
                 <li class="navbar__nav-item">
-                    <a class="navbar__nav-item-link" href="/property.php">Our Story</a>
+                    <a href="/story.php" class="navbar__nav-item-link" ">Our Story</a>
                 </li>
-                <li class="navbar__nav-item">
-                    <a href="/service.php" class="navbar__nav-item-link">Services</a>
+                <li class=" navbar__nav-item">
+                        <a href="/service.php" class="navbar__nav-item-link">Services</a>
                 </li>
                 <li class="navbar__nav-item">
                     <a href="#" class="navbar__nav-item-link ">Wedding Venues</a>

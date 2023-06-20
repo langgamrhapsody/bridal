@@ -4,7 +4,7 @@
             <div class="story__col col-12">
                 <img class="story__img" src="../../assets/img/company-2.webp" alt="">
             </div>
-            <div class="story__col--text col-6">
+            <div class="story__col--text col-12 col-lg-6">
                 <div class="story__content">
                     <h1 class="story__content-title">Our Story</h1>
                     <p class="story__content-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
@@ -46,7 +46,7 @@
                     </p>
                 </div>
             </div>
-            <div class="story__col col-6">
+            <div class="story__col--swiper col-12 col-sm-10 col-lg-6">
                 <div class="story__swiper-container">
                     <div class="story__swiper">
                         <div class="swiper-wrapper">
